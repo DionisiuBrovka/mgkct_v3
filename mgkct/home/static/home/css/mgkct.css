@@ -1,0 +1,367 @@
+@font-face {
+    font-family: Maustica;
+    src: url('src/fonts/MusticaproSemibold.otf');
+}
+
+:root{
+    --st-main-color: #0056a7;
+    --st-main-color-light: #0068c9;
+
+}
+
+/* -------------------------------------------------- */
+/* BODY */
+body{
+    background-color: rgb(241, 248, 255) !important;
+}
+
+/* -------------------------------------------------- */
+/* LAY HEAD BG */
+.t-a-j{
+    text-align: justify;
+}
+
+/* -------------------------------------------------- */
+/* LAY HEAD BG */
+#el-bg-head-block{
+    position: relative;
+
+    width: 100%;
+    height: 25vh;
+
+    margin-bottom: -25vh;
+
+    background-size: cover;
+
+    background-color: rgb(192, 221, 255);
+
+    z-index: -1;
+    overflow: hidden;
+}
+
+#bg-video {
+    right: 0;
+    margin-top: -15vh;
+    width: 100%;
+}
+
+/* -------------------------------------------------- */
+/* LAY CAPTION */
+#el-caption-block{
+    height: 25vh;
+}
+
+.row-caption-main{
+    height: 100%;
+}
+
+#logo-imgs-box{
+    height: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header-img-logo{
+    width: 30%;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    60% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+#text-box{
+    animation-name: fadeIn;
+
+    animation-duration: 6s;
+}
+
+#text-box{
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+
+#text-box p{
+    margin: 0px;
+
+    font-size: 16pt;
+
+    color: #0068c9;
+
+    text-shadow:1px 1px 2px rgb(255, 255, 255);
+}
+
+.h-caption{
+    font-size: 32pt;
+    font-family: 'Maustica';
+    color: #0068c9;
+
+    text-shadow:3px 3px 2px rgba(255, 255, 255, 0.616);
+}
+
+/* -------------------------------------------------- */
+/* LAY PAGE */
+#el-page{
+    min-height: 75vh;
+
+}
+
+/* -------------------------------------------------- */
+/* LAY CAPTION */
+#el-content-block{
+    min-height: 65vh;
+    
+    background-color: white !important;
+    box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.25);
+}
+
+/* -------------------------------------------------- */
+/* LAY FOOTER */
+#el-footer{
+    min-height: 20vh;
+    padding: 1.5rem;
+
+    color: white;
+
+    background-color: #0056a7;
+    box-shadow: inset 0px 20px 15px 0px rgba(0, 0, 0, 0.15);
+}
+
+/* -------------------------------------------------- */
+/* SLIDED */
+.carousel-control-next-icon,
+.carousel-control-prev-icon{
+    font-size: 22pt;
+
+    text-shadow: 2px 2px 4px black;
+    background-image: none !important;
+}
+
+/* -------------------------------------------------- */
+/* EL MAIN PAGE SLIDED */
+#el-main-page-slider{
+    margin-right: calc(var(--bs-gutter-x) * -0.5);
+    margin-left: calc(var(--bs-gutter-x) * -0.5);
+}
+
+.carousel-item-img{
+    height: 60vh;
+    width: 100%;
+    object-fit: cover;
+}
+
+.carousel-caption{
+    width: 100%;
+    height: 100%;
+    bottom: 0px !important;
+    left: 0 !important;
+    right: 0 !important;
+
+    padding-bottom: 5px !important;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: end;
+
+    background: linear-gradient(to top, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 40%, rgba(0,0,0,0) 95%, rgba(0,0,0,0.3) 100%);
+}
+
+.carousel-caption p{
+    margin-bottom: 25px;
+}
+
+.carousel-caption h5{
+    margin-bottom: 0px;
+}
+
+.carousel-caption *{
+    text-shadow: 2px 2px 3px black;
+}
+
+.carousel-indicators button{
+    margin: 2px !important;
+    
+}
+
+/* -------------------------------------------------- */
+/* EL CP SLIDED */
+.carousel-item-img-pallet{
+    height: 43vh;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* -------------------------------------------------- */
+/* SOC-LINKS */
+#soc-links-box p{
+    margin-top: 1.25rem;
+    margin-bottom: 0px;
+}
+
+#soc-links-box a{
+    margin-right: 0.5rem;
+
+    font-size: 18pt;
+
+    color: white;
+}
+
+/* -------------------------------------------------- */
+/* PALLET */
+.pallet-block{
+    width: 100%;
+    height: 43vh;
+
+    border-radius: 0.25em;
+    border: solid 1px rgb(200, 200, 200);
+
+    padding: calc(var(--bs-gutter-x) * .5);
+
+    margin-top: calc(var(--bs-gutter-x) * .5);
+    margin-bottom: calc(var(--bs-gutter-x) * .5);
+
+    box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.25);
+}
+
+.pallet-block-np{
+    padding: 0px;
+}
+
+
+
+
+/* 00000000000000000000000000000000000000000 */
+/* NEWS CARD */
+.card-news{
+    margin-bottom: calc(var(--bs-gutter-x) * .5);
+    margin-top: calc(var(--bs-gutter-x) * .5);
+
+    box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.25);
+
+}
+
+.card-img-top{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.card-body>.date{
+    height:20px;
+    font-size: small;
+    margin: 0px;
+
+    color: gray;
+}
+
+.card-body>p{
+    height: 70px;
+}
+
+.card-text{
+    overflow: hidden;
+    display: -webkit-box;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+}
+
+#tab-k-nes,
+#tab-ko-nes,
+#tab-m-nes{
+    padding: calc(var(--bs-gutter-x) * .5);
+}
+
+.el-block-wins-pallet{
+    margin: calc(var(--bs-gutter-x) * 0.5) !important;
+}
+
+.side-pallet-img-right{
+    height: 100%;
+    width: 50%;
+    object-fit: cover;
+    float: left;
+
+    border-radius: 0.25em 0 0 0.25em;
+
+    margin: calc(var(--bs-gutter-x) * -0.5);
+    margin-right: calc(var(--bs-gutter-x) * 0.5);
+
+}
+
+#logo-video{
+    height: 300px;
+    width: 300px;
+}
+
+.card-news-all{
+    height: 100%;
+    padding-top: calc(var(--bs-gutter-x) * 0.5);
+    padding-bottom: calc(var(--bs-gutter-x) * 0.5);
+}
+
+.card-news-all>a{
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    background-color: rgb(206, 206, 206);
+    color: rgb(110, 110, 110);
+    border: solid 1px rgb(163, 163, 163);
+    border-radius: 0.25rem;
+    font-family: 'Maustica';
+    font-size: 32pt;
+    text-align: center;
+    transition: 0.25s;
+
+    box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.25);
+}
+
+.card-news-all>a>.fa-list-ul{
+    font-size: 64pt;
+}
+
+.card-news-all>a:hover{
+    background-color: rgb(226, 226, 226);
+    color: rgb(163, 163, 163);
+    border: solid 1px rgb(189, 189, 189);
+
+    box-shadow: 0px 0px 11px 0px rgba(0, 0, 0, 0.35);
+
+}
+
+#el-baners{
+    background: url(src/img/mgkct.minskedu.gov.by_.png);
+    background-position: center;
+    height: 15vh;
+}
+
+.nav-link.active{
+    background-color: #0056a7 !important;
+    color: white !important;
+}
+
+#myTab{
+    margin-top: 5rem;
+}
+
+#main-logo{
+    scale: 1.1;
+}
+
+#minsk{
+    scale: 0.9;
+}
